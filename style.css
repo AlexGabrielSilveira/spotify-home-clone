@@ -12,15 +12,18 @@ body {
 }
 main{
     display: flex;
+    height: 100vh;
 }
 #content {
     width: 100%;
     height: 100%;
 }
 aside {
+    z-index: 0;
+    position: relative;
     background-color: #000000;
     min-width: 250px;
-    height: 100vh;
+    height: 100%;
     padding-left: 20px;
 }
 aside img {
@@ -52,6 +55,7 @@ ul li i {
     padding-right: 20px;
 }
 #elements {
+    z-index: 3;
     width: 100%;
     background-color: #0000009a;
     display: flex;
@@ -93,11 +97,32 @@ ul li i {
 #signUp:hover, #elements span:hover {
     opacity: 1;
     transition: 250ms;
-    
 }
-#contentSongs h2 {
-    text-align: center;
+h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    margin: 15px;
+    margin: 20px 0px 20px 80px;
+}
+#contentSongs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    max-width: 190px;
+    max-height: 240px;
+    color: white;
+    background-color:  #121212;
+    padding: 5px;
+    box-shadow: 0px 0px 15px 0.5px black;
+    margin-bottom: 15px;
+}
+.cards img {
+    width: 180px;
+    max-width: 340px;
+}
+.cards p {
+    padding: 2px;
 }
