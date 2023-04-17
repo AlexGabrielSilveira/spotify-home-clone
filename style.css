@@ -118,6 +118,9 @@ h2 {
     padding: 5px;
     box-shadow: 0px 0px 15px 0.5px black;
     margin-bottom: 15px;
+    transition: 250ms;
+    cursor: pointer;
+
 }
 .cards img {
     width: 180px;
@@ -125,4 +128,8 @@ h2 {
 }
 .cards p {
     padding: 2px;
+}
+.cards:hover {
+    transition: 250ms;
+    background-color: #494747;
 }
